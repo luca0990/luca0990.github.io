@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="require/require.js"></script>
+    
+    <div id="cover" style="position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #ffffff; z-index:9999;"></div>
+
+  </head>
+  <body>
+ 
+
+  <div class="site-wrap">
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+	
+    <header class="site-navbar py-1" role="banner" data-include="Header"></header>
+
+    <br>
+    <h1  style="margin-left: 2%;">Error: 404</h1>
+    <div style="margin-left: 2%;">
+      Non ti preoccupare non è successo niente<br>
+      Sei solo in una pagina del sito che non esiste<br>
+      Controlla bene l'url in alto e al massimo clicca sul simbolo di "Salone Look Donna" per farti riportare nella Home Page<br>
+      Se non fai nulla per 30 sec tornerai alla pagina principale<br>
+    </div>
+    <br>
+    
+    <script>
+      setTimeout(function() {
+        window.location.href = "/";
+      }, 30000);
+    </script>
+    
+    <footer class="site-footer" data-include="footer"></footer>
+  </div>
+    
+  </body>
+</html>
